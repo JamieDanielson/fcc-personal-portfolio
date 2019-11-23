@@ -1,0 +1,103 @@
+:root {
+  --color-black: #151A1E;
+  --color-red: #8e1c44;
+  --color-blue: #1C448E;
+  --color-lightblue: #2458b9;
+  --color-white: #F0EDEE;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-blue);
+  color: inherit;
+}
+
+nav a {
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #2458b9;
+  color: inherit;
+}
+
+.page-container {
+  background: var(--color-white);
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--color-black);
+  width: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+  color: inherit;
+  font-weight: 400;
+}
+h2 {
+  font-size: 3rem;
+  color: var(--color-lightblue);
+  font-weight: 400;
+}
+
+footer {
+  width: 100%;
+  background: var(--color-blue);
+  color: var(--color-white);
+  text-align: center;
+  padding: 2rem 0;
+  align-items: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.language-icons {
+  text-align: center;
+}
+
+section#projects {
+  text-align: center;
+}
+
+figcaption {
+  color: var(--color-black)
+}
+
+@media (max-width: 800px) {
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+}
