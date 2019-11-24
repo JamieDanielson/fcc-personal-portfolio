@@ -5,12 +5,11 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="scripts.js"></script>
 
 </head>
 
 <body>
-  <!-- https://codepen.io/freeCodeCamp/full/zNBOYG is the example to use as a guide-->
-
   <nav id="navbar">
     <a href="#welcome-section">Welcome</a>
     <a href="#learning">Learning</a>
@@ -29,12 +28,38 @@
     </section>
 
     <section id="projects" class="projects">
-      <figure class="project-tile">
-        <figcaption>Random GitHub Project</figcaption><a href="https://jamiedanielson.github.io/markdown-portfolio/"
-          title="GitHub Project"><img
-            src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg"
-            alt="cute kitty"></a>
-      </figure>
+      <div class="cards-grid">
+        <div class="card-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
+            </div>
+            <div class="flip-card-back">
+              <div class="card-caption">Some text</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
+            </div>
+            <div class="flip-card-back">
+              <div class="card-caption">Some text</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
+            </div>
+            <div class="flip-card-back">
+              <div class="card-caption">Some text</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </div>
