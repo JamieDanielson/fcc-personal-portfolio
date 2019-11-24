@@ -1,8 +1,7 @@
-# fcc-personal-portfolio
-FCC Personal Portfolio
+# Personal Portfolio
 
-freeCodeCamp.org has this Responsive Web design certificaiton, and it requires 6 projects at the end including a personal portfolio.  
+freeCodeCamp.org has a Responsive Web design certification which includes creating a personal portfolio.  
 
-Just adding the code here in case I decide to do more with it.
+Initially I added the code here in case I did more with it.  And now I've done more with it.
 
 https://jamiedanielson.github.io/fcc-personal-portfolio/
