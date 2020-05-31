@@ -1,7 +1,12 @@
 # Personal Portfolio
 
-freeCodeCamp.org has a Responsive Web design certification which includes creating a personal portfolio.  
+[https://jamiedanielson.github.io/portfolio/](https://jamiedanielson.github.io/portfolio/)
 
-Initially I added the code here in case I did more with it.  And now I've done more with it.
+[Jamie Danielson | LinkedIn](https://www.linkedin.com/in/jamiedanielson/)
 
-https://jamiedanielson.github.io/portfolio/
+* eCommerce, SEO, UX
+* HTML, CSS, JavaScript
+* Google Analytics, Tag Manager, Data Studio
+* Relational Databases (Microsoft SQL Server)
+* Web Accessibility
+* Microsoft Office, Advanced Proficiency in Excel
