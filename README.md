@@ -24,3 +24,17 @@
 [Google Tag Manager Fundamentals - Certificate](https://analytics.google.com/analytics/academy/certificate/rLnACpCwSb6QPF4iTSPwMQ)
 
 [Hour of Code: Simple Encryption - Certificate from Code.org](https://code.org/printcertificate/_1_0204b4a35283a027cb9e1263c26f3ada)
+
+## Courses
+
+* CS50’s Understanding Technology (Harvard)
+* Google Analytics for Beginners (Google Analytics Academy)
+* Google Tag Manager Fundamentals (Google Analytics Academy)
+* Introduction to Data Studio (Google Analytics Academy)
+* Learn SQL (Codecademy)
+* Media and Audience Analysis (Stockton University)
+* Programming for Everybody - Getting Started with Python (University of Michigan)
+* Project Management (Villanova University)
+* Responsive Web Design Certification (freeCodeCamp)
+* Web Accessibility (Udacity)
+* Yoast All-around SEO

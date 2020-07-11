@@ -2,21 +2,7 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160007802-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160007802-1');
-  </script>
-
   <link rel="stylesheet" type="text/css" href="styles.css">
-
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Questrial&display=swap" />
@@ -25,15 +11,20 @@
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap" />
   </noscript>
-  <script src="scripts.js"></script>
+
 
 </head>
 
 <body>
   <nav id="navbar">
-    <a href="#welcome-section">Welcome</a>
-    <a href="#learning">Learning</a>
-    <a href="#projects">Projects</a>
+    <div class="logo">
+      <a href="/" class="logo"><img src="/images/bwselfie-circle.png" alt="black and white photo" /></a>
+    </div>
+    <div class="nav-links">
+      <a href="#welcome-section">Welcome</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+    </div>
   </nav>
   <div class="page-container">
     <section id="welcome-section" class="welcome-section">
@@ -41,50 +32,99 @@
       <h2>I code things.</h2>
     </section>
 
-    <section id="learning">
-      <div class="language-icons">
-        <img src="https://rick.cogley.info/img/html5-css3-js-logo.png" alt="html5 css3 js" class="img-logo">
+    <section id="learning" class="learning">
+      <div class="left half-grid">
+        <h3>Courses</h3>
+
+        <ul>
+          <li class="cert">
+            CS50’s Understanding Technology (Harvard)
+          </li>
+          <li class="cert">
+            Google Analytics for Beginners (Google Analytics Academy)
+          </li>
+          <li class="cert">
+            Google Tag Manager Fundamentals (Google Analytics Academy)
+          </li>
+          <li class="cert">
+            Introduction to Data Studio (Google Analytics Academy)
+          </li>
+          <li class="cert">
+            Learn SQL (Codecademy)
+          </li>
+          <li class="cert">
+            Media and Audience Analysis (Stockton University)
+          </li>
+          <li class="cert">
+            Programming for Everybody - Getting Started with Python (University of Michigan)
+          </li>
+          <li class="cert">
+            Project Management (Villanova University)
+          </li>
+          <li class="cert">
+            Responsive Web Design Certification (freeCodeCamp)
+          </li>
+          <li class="cert">
+            Web Accessibility (Udacity)
+          </li>
+          <li class="cert">
+            Yoast All-around SEO
+          </li>
+        </ul>
+      </div>
+      <div class="right half-grid">
+        <h3>Certificates</h3>
+        <ul>
+          <li class="cert">
+            <a href="https://www.freecodecamp.org/certification/jamied/responsive-web-design" target="_blank"
+              rel="noopener">Responsive Web Design
+              Certification from freeCodeCamp</a>
+          </li>
+          <li class="cert">
+            <a href="https://analytics.google.com/analytics/academy/certificate/Gdoxg3vRQ_u8t7P7mFKuKA" target="_blank"
+              rel="noopener">Google
+              Analytics
+              for Beginners - Certificate</a>
+          </li>
+          <li class="cert">
+            <a href="https://academy.yoast.com/certificate/2883/764696/ddad19c10932809f354e6c774506d1b9/1/"
+              target="_blank" rel="noopener">Yoast
+              All-around SEO training Certificate</a>
+          </li>
+          <li class="cert">
+            <a href="https://analytics.google.com/analytics/academy/certificate/rLnACpCwSb6QPF4iTSPwMQ" target="_blank"
+              rel="noopener">Google Tag
+              Manager Fundamentals - Certificate</a>
+          </li>
+          <li class="cert">
+            <a href="https://code.org/printcertificate/_1_0204b4a35283a027cb9e1263c26f3ada" target="_blank"
+              rel="noopener">Hour of Code: Simple
+              Encryption - Certificate from Code.org</a>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section id="projects" class="projects">
-      <div class="cards-grid">
-        <div class="card-container">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
-            </div>
-            <div class="flip-card-back">
-              <div class="card-caption">Some text</div>
-            </div>
+      <div class="full-circuit">
+        <a href="http://fullcircuitnj.com/">Full Circuit Electric NJ</a>
+        <p class="white-text">
+          Rewrote entire website using HTML Boilerplate and Bootstrap.
+        </p>
+        <div class="before-and-after">
+          <div class="before">
+            <img src="/images/home_orig_full-circuit_2020.05.23.webp" alt="original full circuit website" />
+          </div>
+          <div class="after">
+            <img src="images/home_new_full-circuit_2020.05.23.webp" alt="new full circuit website">
           </div>
         </div>
-        <div class="card-container">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
-            </div>
-            <div class="flip-card-back">
-              <div class="card-caption">Some text</div>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://via.placeholder.com/300x400" alt="project placeholder">
-            </div>
-            <div class="flip-card-back">
-              <div class="card-caption">Some text</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 
   </div>
-  </div>
-  <footer id="footer">
+  <footer id="footer" class="footer">
 
     <a href="https://github.com/JamieDanielson" title="GitHub" target="_blank" id="profile-link"><svg height="24"
         viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true">
@@ -96,6 +136,7 @@
     <a href="https://codepen.io/jamie-danielson" title="Codepen" target="_blank" id="profile-link"><img height="24"
         src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg"></a>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
