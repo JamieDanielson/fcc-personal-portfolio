@@ -176,6 +176,33 @@ footer {
   text-align: center;
 }
 
+/* About Me Section */
+
+.about-me-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 8em;
+  border-bottom: 1px solid var(--color-black);
+  align-items: center;
+}
+
+.my-face {
+  justify-self: center;
+}
+
+.my-face img {
+  max-height: 500px;
+}
+
+.about-items {
+  list-style: none;
+}
+
+.about-items span {
+  font-weight: 700;
+}
+
 /* Learning Section */
 
 .learning {
@@ -193,11 +220,6 @@ footer {
 
 .right.half-grid {
   grid-column: span 6;
-}
-
-.learning h3 {
-  font-weight: 700;
-  letter-spacing: .3rem;
 }
 
 li.cert {
@@ -251,8 +273,10 @@ li.cert {
     margin: 1rem auto;
   }
 
+
   .learning,
-  .projects {
+  .projects,
+  .about-me-section {
     grid-template-columns: 1fr;
     padding: 2em;
   }
