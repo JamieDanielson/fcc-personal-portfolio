@@ -114,15 +114,8 @@ nav.scroll {
 }
 
 .logo {
-  max-height: 100px;
-}
-
-.logo img {
-  max-height: 100%;
-}
-
-.logo {
   padding-left: 1rem;
+  font-weight: 700;
 }
 
 .nav-links {
@@ -151,6 +144,10 @@ footer {
   vertical-align: middle;
   display: inline-block;
   margin-top: 5rem;
+}
+
+footer a {
+  padding: 1rem;
 }
 
 /* Welcome Section */
@@ -290,5 +287,12 @@ li.cert {
   .before,
   .after {
     justify-self: center;
+    grid-column: span 1;
+  }
+
+  .left.half-grid,
+  .right.half-grid {
+    grid-column: span 1;
+    justify-self: flex-start;
   }
 }
