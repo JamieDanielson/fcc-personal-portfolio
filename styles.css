@@ -259,6 +259,13 @@ li.cert {
   overflow-y: scroll;
 }
 
+.bookmark-screenshot {
+  overflow-y: scroll;
+  height: 400px;
+  width: 1020px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 800px) {
 
   nav {
@@ -294,5 +301,10 @@ li.cert {
   .right.half-grid {
     grid-column: span 1;
     justify-self: flex-start;
+  }
+
+  .bookmark-screenshot {
+    height: 300px;
+    width: 300px;
   }
 }
