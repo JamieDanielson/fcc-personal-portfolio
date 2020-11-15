@@ -111,6 +111,7 @@ nav>div {
 
 nav.scroll {
   background: var(--color-blue);
+  z-index: 1;
 }
 
 .logo {
@@ -143,7 +144,6 @@ footer {
   align-items: center;
   vertical-align: middle;
   display: inline-block;
-  margin-top: 5rem;
 }
 
 footer a {
@@ -200,6 +200,35 @@ footer a {
   font-weight: 700;
 }
 
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
 /* Learning Section */
 
 .learning {
@@ -238,7 +267,16 @@ li.cert {
 
 .projects {
   text-align: center;
-  padding: 8em;
+  padding: 8em 8em 0;
+}
+
+.project {
+  padding: 1rem 0 2rem;
+}
+
+p.white-text {
+  max-width: 50%;
+  margin: 0 auto 1.15rem;
 }
 
 .before-and-after {
@@ -266,6 +304,10 @@ li.cert {
   margin: auto;
 }
 
+.other p {
+  font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 800px) {
 
   nav {
@@ -277,12 +319,15 @@ li.cert {
     margin: 1rem auto;
   }
 
-
   .learning,
   .projects,
   .about-me-section {
     grid-template-columns: 1fr;
     padding: 2em;
+  }
+
+  p.white-text {
+    max-width: 100%;
   }
 
   .before-and-after {
@@ -306,5 +351,9 @@ li.cert {
   .bookmark-screenshot {
     height: 300px;
     width: 300px;
+  }
+
+  .other p {
+    font-size: 1.4rem;
   }
 }
