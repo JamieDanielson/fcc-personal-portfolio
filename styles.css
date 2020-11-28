@@ -3,7 +3,8 @@
   --color-red: #8e1c44;
   --color-blue: #1C448E;
   --color-lightblue: #4E80DD;
-  --color-white: #F0EDEE;
+  /* --color-white: #F0EDEE; */
+  --color-white: #fff;
 }
 
 html {
@@ -276,37 +277,32 @@ li.cert {
 
 .projects a {
   font-family: 'Oswald', sans-serif;
+  font-size: 1.25em;
 }
 
 p.white-text {
-  max-width: 50%;
-  margin: 0 auto 1.15rem;
+  max-width: 80%;
+  margin: 1.15rem auto;
 }
 
-.before-and-after {
+.project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: flex-start;
   margin: auto;
+  max-width: 80%;
 }
 
-.before {
-  justify-self: end;
-}
-
-.after {
-  justify-self: start;
-  height: 320px;
-  overflow-y: scroll;
-}
-
+.full-circuit-screenshot,
 .bookmark-screenshot {
   overflow-y: scroll;
   height: 400px;
-  width: 1020px;
+  width: 500px;
   margin: auto;
+  box-shadow: 0 0 10px var(--color-black);
 }
+
 
 .other p {
   font-size: 1.5rem;
@@ -334,24 +330,22 @@ p.white-text {
     max-width: 100%;
   }
 
-  .before-and-after {
-    grid-template-columns: 1fr;
-    width: 95%;
-    overflow-x: hidden;
-  }
-
-  .before,
-  .after {
-    justify-self: center;
-    grid-column: span 1;
-  }
-
   .left.half-grid,
   .right.half-grid {
     grid-column: span 1;
     justify-self: flex-start;
   }
 
+  .project-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .project {
+    padding: 1rem 0;
+  }
+
+  .full-circuit-screenshot,
   .bookmark-screenshot {
     height: 300px;
     width: 300px;
