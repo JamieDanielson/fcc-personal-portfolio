@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[https://jamiedanielson.github.io/portfolio/](https://jamiedanielson.github.io/portfolio/)
+[https://jamiedanielson.github.io/](https://jamiedanielson.github.io/)
 
 [Jamie Danielson | LinkedIn](https://www.linkedin.com/in/jamiedanielson/)
 
