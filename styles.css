@@ -49,8 +49,8 @@ h3,
 h4,
 h5 {
   margin: 2.75rem 0 1.05rem;
-  font-family: 'Questrial', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   line-height: 1.15;
 }
 
@@ -103,6 +103,7 @@ nav {
   transition: 500ms ease-out;
   max-height: 100px;
   align-items: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav>div {
@@ -155,6 +156,8 @@ footer a {
 .welcome-section h1 {
   font-size: 5em;
   color: var(--color-white);
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
 }
 
 .welcome-section h2 {
@@ -172,6 +175,29 @@ footer a {
   width: 100%;
   text-align: center;
 }
+
+
+.welcome-section h1 {
+  animation: fadeInLeft .5s ease-in-out 0.5s forwards;
+}
+
+.welcome-section h2 {
+  animation: fadeInLeft .5s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-.8125rem, 0, 0);
+    transform: translate3d(1rem, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0)
+  }
+}
+
 
 /* About Me Section */
 
@@ -198,35 +224,7 @@ footer a {
 
 .about-items span {
   font-weight: 700;
-}
-
-
-.align-left {
-  float: left;
-  margin-right: 20px;
-}
-
-.align-right {
-  float: right;
-  margin-left: 20px;
-}
-
-.slide-in {
-  opacity: 0;
-  transition: all .5s;
-}
-
-.align-left.slide-in {
-  transform: translateX(-30%) scale(0.95);
-}
-
-.align-right.slide-in {
-  transform: translateX(30%) scale(0.95);
-}
-
-.slide-in.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1);
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Learning Section */
@@ -272,6 +270,10 @@ li.cert {
 
 .project {
   padding: 1rem 0 2rem;
+}
+
+.projects a {
+  font-family: 'Oswald', sans-serif;
 }
 
 p.white-text {

@@ -6,11 +6,11 @@
 
 ## Skills
 
-* eCommerce, SEO, UX
 * HTML, CSS, JavaScript
-* Google Analytics, Tag Manager, Data Studio
 * Relational Databases (Microsoft SQL Server)
 * Web Accessibility
+* eCommerce, SEO, UX
+* Google Analytics, Tag Manager, Data Studio
 * Microsoft Office, Advanced Proficiency in Excel
 
 ## Certificates
