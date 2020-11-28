@@ -167,23 +167,30 @@ footer a {
 }
 
 .welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
   background: var(--color-black);
   width: 100%;
   text-align: center;
 }
 
-
-.welcome-section h1 {
-  opacity: 0;
-  animation: fadeInLeft .5s ease-in-out 0.5s forwards;
+.welcome-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
-.welcome-section h2 {
+.hello {
+  opacity: 0;
+  animation: fadeInRight .5s ease-in-out 0.5s forwards;
+}
+
+.my-face img {
+  max-height: 500px;
   opacity: 0;
   animation: fadeInLeft .5s ease-in-out 0.5s forwards;
 }
@@ -201,6 +208,18 @@ footer a {
   }
 }
 
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(1rem, 0, 0);
+    transform: translate3d(-.8125rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0)
+  }
+}
 
 /* About Me Section */
 
@@ -213,12 +232,16 @@ footer a {
   align-items: center;
 }
 
-.my-face {
-  justify-self: center;
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 50%;
+  margin: auto;
 }
 
-.my-face img {
-  max-height: 500px;
+.skills svg {
+  max-width: 100px;
 }
 
 .about-items {
@@ -314,14 +337,29 @@ p.white-text {
     display: none;
   }
 
-  .welcome-section h1 {
-    width: 80%;
-    margin: 1rem auto;
+  .welcome-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .hello h1 {
+    font-size: 3em;
+  }
+
+  .my-face img {
+    width: 250px;
+  }
+
+  .about-me-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
   }
 
   .learning,
-  .projects,
-  .about-me-section {
+  .projects {
     grid-template-columns: 1fr;
     padding: 2em;
   }
@@ -348,7 +386,7 @@ p.white-text {
   .full-circuit-screenshot,
   .bookmark-screenshot {
     height: 300px;
-    width: 300px;
+    max-width: 300px;
   }
 
   .other p {
